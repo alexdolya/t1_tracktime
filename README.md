@@ -19,7 +19,7 @@
 - вызов однократного выполнени€ метода с аннотацией @TrackAsyncTime;
 - вызов выполнени€ метода с аннотацией @TrackAsyncTime N раз.
 
-¬заимодействие в соответствии со  
+### Open-API: src/main/resources/openapi/api-docs.json
 
 ## «апуск приложени€
 
