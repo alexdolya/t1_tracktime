@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: create_method_execution_statistics_table
+      author: AlexeyDolya
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: method_name
+                  type: VARCHAR(255)
+              - column:
+                  name: count_of_calls
+                  type: INTEGER
+              - column:
+                  name: last_call_date_time
+                  type: TIMESTAMP
+              - column:
+                  name: last_execution_time
+                  type: BIGINT
+              - column:
+                  name: avg_execution_time
+                  type: BIGINT
+            tableName: method_execution_statistics
